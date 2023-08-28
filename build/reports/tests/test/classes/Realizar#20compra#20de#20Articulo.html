@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Realizar compra de Articulo</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Realizar compra de Articulo</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Realizar compra de Articulo</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">27.858s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Añadir productos al carrito y completar la compra</td>
+<td class="success">16.554s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Iniciar sesion usuario registrado</td>
+<td class="success">11.304s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+
+    ?[32mGiven ?[0m?[32mel usuario se registra en el sitio web?[0m          ?[90m# AgregarProductoCarritoDefinitions.el_ingreso_a_la_tienda_virtual()?[0m
+
+
+
+
+    ?[32mWhen ?[0m?[32mingresa username y password?[0m                      ?[90m# AgregarProductoCarritoDefinitions.ingreso_usuario_y_clave()?[0m
+
+
+Sign up successful.
+
+
+    ?[32mThen ?[0m?[32mla aplicacion muestra mensaje Sign up successful?[0m ?[90m# AgregarProductoCarritoDefinitions.la_aplicacion_muestra_mensaje_Sign_up_successful()?[0m
+
+
+
+
+    ?[32mGiven ?[0m?[32mque me encuentro logueado con &quot;?[0m?[32m?[1muser12499?[0m?[32m&quot; y &quot;?[0m?[32m?[1m12345?[0m?[32m&quot;?[0m ?[90m# AgregarProductoCarritoDefinitions.que_me_encuentro_logueado_con_y(String,String)?[0m
+
+
+estoy en categoria
+Este es el texto: MacBook air
+
+
+    ?[32mWhen ?[0m?[32mselecciono el producto &quot;?[0m?[32m?[1mMacBook air?[0m?[32m&quot;?[0m                 ?[90m# AgregarProductoCarritoDefinitions.selecciono_el_producto(String)?[0m
+
+
+
+
+Product added.
+
+
+    ?[32mAnd ?[0m?[32manado la &quot;?[0m?[32m?[1mMacBook air?[0m?[32m&quot; al carrito de compras?[0m          ?[90m# AgregarProductoCarritoDefinitions.anado_la_al_carrito_de_compras(String)?[0m
+
+
+
+
+
+
+
+
+    ?[32mAnd ?[0m?[32mnavego al carrito de compras para validar orden?[0m       ?[90m# AgregarProductoCarritoDefinitions.navego_al_carrito_de_compras_para_validar_orden()?[0m
+
+
+
+
+
+
+    ?[32mAnd ?[0m?[32mcompleto la informacion tomar la orden y compra?[0m       ?[90m# AgregarProductoCarritoDefinitions.completo_la_informacion_tomar_la_orden_y_compra()?[0m
+
+
+
+
+    ?[32mThen ?[0m?[32mdeberia recibir una confirmacion de compra exitosa?[0m   ?[90m# AgregarProductoCarritoDefinitions.deberia_recibir_una_confirmacion_de_compra_exitosa()?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>ago. 28, 2023 3:50:09 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 25410
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ago. 28, 2023 3:50:13 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Iniciar sesion usuario registrado
+----------------------------------------------------------------------------
+ago. 28, 2023 3:50:19 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 6845
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ago. 28, 2023 3:50:21 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Añadir productos al carrito y completar la compra
+----------------------------------------------------------------------------
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 28/08/2023, 3:50:39 p. m.</p>
+</div>
+</div>
+</body>
+</html>

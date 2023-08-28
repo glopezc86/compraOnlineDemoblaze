@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Realizar compra de Articulo" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-08-28T20:50:08" hostname="DESKTOP-IK1KHKF" time="27.876">
+  <properties/>
+  <testcase name="Iniciar sesion usuario registrado" classname="Realizar compra de Articulo" time="11.304"/>
+  <testcase name="Añadir productos al carrito y completar la compra" classname="Realizar compra de Articulo" time="16.554"/>
+  <system-out><![CDATA[
+
+    ?[32mGiven ?[0m?[32mel usuario se registra en el sitio web?[0m          ?[90m# AgregarProductoCarritoDefinitions.el_ingreso_a_la_tienda_virtual()?[0m
+
+
+
+
+    ?[32mWhen ?[0m?[32mingresa username y password?[0m                      ?[90m# AgregarProductoCarritoDefinitions.ingreso_usuario_y_clave()?[0m
+
+
+Sign up successful.
+
+
+    ?[32mThen ?[0m?[32mla aplicacion muestra mensaje Sign up successful?[0m ?[90m# AgregarProductoCarritoDefinitions.la_aplicacion_muestra_mensaje_Sign_up_successful()?[0m
+
+
+
+
+    ?[32mGiven ?[0m?[32mque me encuentro logueado con "?[0m?[32m?[1muser12499?[0m?[32m" y "?[0m?[32m?[1m12345?[0m?[32m"?[0m ?[90m# AgregarProductoCarritoDefinitions.que_me_encuentro_logueado_con_y(String,String)?[0m
+
+
+estoy en categoria
+Este es el texto: MacBook air
+
+
+    ?[32mWhen ?[0m?[32mselecciono el producto "?[0m?[32m?[1mMacBook air?[0m?[32m"?[0m                 ?[90m# AgregarProductoCarritoDefinitions.selecciono_el_producto(String)?[0m
+
+
+
+
+Product added.
+
+
+    ?[32mAnd ?[0m?[32manado la "?[0m?[32m?[1mMacBook air?[0m?[32m" al carrito de compras?[0m          ?[90m# AgregarProductoCarritoDefinitions.anado_la_al_carrito_de_compras(String)?[0m
+
+
+
+
+
+
+
+
+    ?[32mAnd ?[0m?[32mnavego al carrito de compras para validar orden?[0m       ?[90m# AgregarProductoCarritoDefinitions.navego_al_carrito_de_compras_para_validar_orden()?[0m
+
+
+
+
+
+
+    ?[32mAnd ?[0m?[32mcompleto la informacion tomar la orden y compra?[0m       ?[90m# AgregarProductoCarritoDefinitions.completo_la_informacion_tomar_la_orden_y_compra()?[0m
+
+
+
+
+    ?[32mThen ?[0m?[32mdeberia recibir una confirmacion de compra exitosa?[0m   ?[90m# AgregarProductoCarritoDefinitions.deberia_recibir_una_confirmacion_de_compra_exitosa()?[0m
+]]></system-out>
+  <system-err><![CDATA[ago. 28, 2023 3:50:09 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 25410
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ago. 28, 2023 3:50:13 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Iniciar sesion usuario registrado
+----------------------------------------------------------------------------
+ago. 28, 2023 3:50:19 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 6845
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ago. 28, 2023 3:50:21 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Añadir productos al carrito y completar la compra
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
